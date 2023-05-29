@@ -1,56 +1,79 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Paralax : MonoBehaviour
 {
-    private Vector2 m_playerPos;
+    private GameObject m_player;
     [SerializeField]
-    private GameObject m_ground;
-    private float m_groundScale = 200;
-    private GameObject m_NewGround;
-    private float m_groundOffSetY = 5.9f;
-
+    private GameObject m_image;
+    private Vector2 m_length;
+    private float m_playerPosX;
+    private GameObject m_newImage;
+    private GameObject m_newImageNeg;
     [SerializeField]
-    private float m_nextInvoke = 200;
+    private float m_offsetY;
+    private float m_lenghtX;
     [SerializeField]
-    private float m_nextInvokeNeg = 200;
-
-   
-
+    private GameObject m_flag;
     // Start is called before the first frame update
     void Start()
     {
-        m_nextInvokeNeg = m_nextInvokeNeg * -1;
+
+      
+        m_player = this.gameObject;
+        m_length = m_image.GetComponentInChildren<SpriteRenderer>().bounds.size ;
+        m_lenghtX = m_length.x - 5;
+        m_newImage = Instantiate(m_image);
+        m_newImage.transform.position = new Vector2(m_playerPosX + (m_lenghtX/2), m_offsetY);
+        m_newImageNeg = Instantiate(m_image);
+        m_newImageNeg.transform.position = new Vector2(m_playerPosX - (m_lenghtX/2), m_offsetY);
     }
 
     // Update is called once per frame
     void Update()
     {
-        m_playerPos = transform.position;
-       
-       
-        // si le joueur a parcourue suffisament de chemin en x une plateforme est instancier
-        if (m_playerPos.x > m_nextInvoke)
+     
+        m_playerPosX = m_player.transform.position.x ;
+        /////////////////////////////////////
+        ///
+        try
         {
-            m_nextInvokeNeg = m_nextInvoke;
-            m_nextInvoke += m_groundScale;
+            if (m_playerPosX > m_newImage.transform.position.x)
+            {
              
-
-            m_NewGround = Instantiate(m_ground);
-            m_NewGround.transform.position = m_playerPos + new Vector2( m_groundScale, m_groundOffSetY);
-
+                m_newImage = Instantiate(m_image);
+                m_newImage.transform.position = new Vector2(m_playerPosX + m_lenghtX, m_offsetY);
+            }
         }
-
-        if (m_playerPos.x < m_nextInvokeNeg)
+        catch
         {
-            m_nextInvoke = m_nextInvokeNeg;
-            m_nextInvokeNeg += m_groundScale * -1;
-
-            m_NewGround = Instantiate(m_ground);
-            m_NewGround.transform.position = m_playerPos + new Vector2( m_groundScale * -1, m_groundOffSetY );
-
+            m_newImage = Instantiate(m_flag);
+            m_newImage.transform.position = new Vector2(m_newImageNeg.transform.position.x + m_lenghtX, m_offsetY);
         }
+
+
+        try
+        {
+            if (m_playerPosX < m_newImageNeg.transform.position.x)
+            {
+               
+                m_newImageNeg = Instantiate(m_image);
+                m_newImageNeg.transform.position = new Vector2(m_playerPosX - m_lenghtX, m_offsetY);
+            }
+        }
+        catch
+        {
+            m_newImageNeg = Instantiate(m_flag);
+            m_newImageNeg.transform.position = new Vector2(m_newImage.transform.position.x - m_lenghtX, m_offsetY);
+        }
+        
+
+
+        ///je recupere la distance entre lanciene et la nouvelle paralax qui se modifi acose de la vitesse
+     
+
+
 
     }
 }
