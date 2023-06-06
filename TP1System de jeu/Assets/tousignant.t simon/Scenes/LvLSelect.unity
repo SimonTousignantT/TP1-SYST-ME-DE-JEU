@@ -1076,6 +1076,7 @@ MonoBehaviour:
   m_isLvl2: 0
   m_isLvl3: 1
   m_speedScript: 0.05
+  m_dataText: {fileID: 11400000, guid: 21f82f21ee1401b41ab53def8ba1b080, type: 2}
 --- !u!1 &541129141
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,6 +1173,7 @@ MonoBehaviour:
   m_isLvl2: 1
   m_isLvl3: 0
   m_speedScript: 0.05
+  m_dataText: {fileID: 11400000, guid: ef3b6b74f022f324dbdac13f274eaa2d, type: 2}
 --- !u!1 &622069590
 GameObject:
   m_ObjectHideFlags: 0
@@ -3750,3 +3752,4 @@ MonoBehaviour:
   m_isLvl2: 0
   m_isLvl3: 0
   m_speedScript: 0.05
+  m_dataText: {fileID: 11400000, guid: 1994ff27d77e50344a0358292f61f6d2, type: 2}
