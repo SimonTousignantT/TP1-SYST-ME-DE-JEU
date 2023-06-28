@@ -59,13 +59,13 @@
     <Compile Include="Assets\tousignant.t simon\Script\DestroyPlatform.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\PortalLor.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\NewBehaviourScript.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\ScriptableObject\PortalLvl\TextLorObject.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\CameraFollow.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\LorText.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\Paralax.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\SpeedParalax.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\MenuButton.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\PlayerMove.cs" />
-    <Compile Include="Assets\tousignant.t simon\Script\ScriptableObject\PortalLvl\TextLorObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
