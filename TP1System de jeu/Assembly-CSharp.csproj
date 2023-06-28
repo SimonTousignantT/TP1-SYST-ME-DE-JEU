@@ -56,16 +56,38 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\tousignant.t simon\Script\CanvasScore.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\DestroyPlatform.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\PortalLor.cs" />
-    <Compile Include="Assets\tousignant.t simon\Script\NewBehaviourScript.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\BirdSpawer.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\StarCompletion.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\ScriptableObject\PortalLvl\TextLorObject.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\EnemieAI.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\EndLvl.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\BirdAI.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\CameraFollow.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\PortalStart.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\LorText.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\DataSave.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\ScriptableObject\StarColor\StarColor.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\Paralax.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\SpeedParalax.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\PortalEndLvl.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\ScoreMenu.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\MonsterSpawn.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\MenuButton.cs" />
     <Compile Include="Assets\tousignant.t simon\Script\PlayerMove.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\Trap.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\PortalRetreat.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\TimeDestroy.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\BossAfterHit.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\DontDestroy.cs" />
+    <Compile Include="Assets\tousignant.t simon\Script\ScriptableObject\Audio\Audio.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\249 Battle Backgrounds\ReadMe.txt" />
+    <None Include="Assets\uomwave91\ReadMe.txt" />
+    <None Include="Assets\2DBirds_Eagle\Documentation\Documentation.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

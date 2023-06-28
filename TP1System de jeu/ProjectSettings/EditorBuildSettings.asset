@@ -9,6 +9,21 @@ EditorBuildSettings:
     path: Assets/tousignant.t simon/Scenes/menu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/tousignant.t simon/Scenes/lvl1.unity
+    guid: cf3bc69b62ce81046a28e610bbf96200
+  - enabled: 1
+    path: Assets/tousignant.t simon/Scenes/lvl2.unity
+    guid: 4780e0b2dd666b844bb26dca42777f7f
+  - enabled: 1
+    path: Assets/tousignant.t simon/Scenes/lvl3.unity
+    guid: 6318aec3f7811434f980b26da8301756
+  - enabled: 1
     path: Assets/tousignant.t simon/Scenes/LvLSelect.unity
     guid: 6377e862b75c53043bd895b63087702b
+  - enabled: 1
+    path: Assets/tousignant.t simon/Scenes/Score.unity
+    guid: ae46dd1b9342eba42835f916c7ad15ee
+  - enabled: 1
+    path: Assets/tousignant.t simon/Scenes/GameOver.unity
+    guid: 40f1f3d133b8dff409b4dd8024b53793
   m_configObjects: {}

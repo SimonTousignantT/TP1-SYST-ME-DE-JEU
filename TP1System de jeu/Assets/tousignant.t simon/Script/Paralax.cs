@@ -16,6 +16,7 @@ public class Paralax : MonoBehaviour
     private float m_lenghtX;
     [SerializeField]
     private GameObject m_flag;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -33,42 +34,42 @@ public class Paralax : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
-        m_playerPosX = m_player.transform.position.x ;
-        /////////////////////////////////////
-        ///
-        try
-        {
-            if (m_playerPosX > m_newImage.transform.position.x)
+       
+            m_playerPosX = m_player.transform.position.x;
+            /////////////////////////////////////
+            ///
+            try
             {
-             
-                m_newImage = Instantiate(m_image);
-                m_newImage.transform.position = new Vector2(m_playerPosX + m_lenghtX, m_offsetY);
+                if (m_playerPosX > m_newImage.transform.position.x)
+                {
+
+                    m_newImage = Instantiate(m_image);
+                    m_newImage.transform.position = new Vector2(m_playerPosX + m_lenghtX, m_offsetY);
+                }
             }
-        }
-        catch
-        {
-            m_newImage = Instantiate(m_flag);
-            m_newImage.transform.position = new Vector2(m_newImageNeg.transform.position.x + m_lenghtX, m_offsetY);
-        }
+            catch
+            {
+                m_newImage = Instantiate(m_flag);
+                m_newImage.transform.position = new Vector2(m_newImageNeg.transform.position.x + m_lenghtX, m_offsetY);
+            }
 
 
-        try
-        {
-            if (m_playerPosX < m_newImageNeg.transform.position.x)
+            try
             {
-               
-                m_newImageNeg = Instantiate(m_image);
-                m_newImageNeg.transform.position = new Vector2(m_playerPosX - m_lenghtX, m_offsetY);
+                if (m_playerPosX < m_newImageNeg.transform.position.x)
+                {
+
+                    m_newImageNeg = Instantiate(m_image);
+                    m_newImageNeg.transform.position = new Vector2(m_playerPosX - m_lenghtX, m_offsetY);
+                }
             }
-        }
-        catch
-        {
-            m_newImageNeg = Instantiate(m_flag);
-            m_newImageNeg.transform.position = new Vector2(m_newImage.transform.position.x - m_lenghtX, m_offsetY);
-        }
+            catch
+            {
+                m_newImageNeg = Instantiate(m_flag);
+                m_newImageNeg.transform.position = new Vector2(m_newImage.transform.position.x - m_lenghtX, m_offsetY);
+            }
+
         
-
 
         ///je recupere la distance entre lanciene et la nouvelle paralax qui se modifi acose de la vitesse
      
@@ -76,4 +77,5 @@ public class Paralax : MonoBehaviour
 
 
     }
+   
 }
