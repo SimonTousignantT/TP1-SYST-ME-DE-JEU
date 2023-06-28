@@ -16,12 +16,15 @@ public class LorText : MonoBehaviour
     private int m_index = 0;
     [SerializeField]
     private TextLorObject m_dataText;
+    private GameObject m_soundManager;
+    [SerializeField]
+    private Audio m_audio;
     // Start is called before the first frame update
     private void Awake()
     {
-     
-      
-            m_myText = m_dataText.m_textLvl;
+
+        m_soundManager = GameObject.Find("SoundManager");
+        m_myText = m_dataText.m_textLvl;
         
     }
     void Start()
@@ -55,9 +58,11 @@ public class LorText : MonoBehaviour
     }
     public void ButtonNext()
     {
+        m_soundManager.GetComponent<AudioSource>().PlayOneShot(m_audio.m_pageTurnSingle);
         GetComponent<Text>().text = "";
         try 
         {
+
             m_index += 1;
             m_myText[m_index] = m_myText[m_index];
             GetComponent<Text>().text = "";

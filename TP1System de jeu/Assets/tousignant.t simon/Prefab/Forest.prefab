@@ -94,7 +94,6 @@ GameObject:
   - component: {fileID: 4766611424885565519}
   - component: {fileID: 2270891333388065074}
   - component: {fileID: 5632438000454968691}
-  - component: {fileID: 1003869382299003136}
   - component: {fileID: 8205939287914239292}
   m_Layer: 3
   m_Name: Forest
@@ -195,32 +194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_viewDistance: 400
---- !u!61 &1003869382299003136
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9080812322071526971}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 50, y: 21.6}
-    newSize: {x: 50, y: 21.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 50, y: 21.6}
-  m_EdgeRadius: 0
 --- !u!50 &8205939287914239292
 Rigidbody2D:
   serializedVersion: 4

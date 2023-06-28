@@ -1,5 +1,9 @@
 -pour bouger apuyer sur A ou D
+-sauter avec space
+-ps : fraper les enemie dans le dos pour les tuer. pour les piege sauter sur les oiseau pour les traversser.
 -appuyer sur les bouton avec le clique gauche de la souris
 -faite jouer le jeux dans la resolution 4k de preference
--l'histoire raconte qu'un seigner ninja est entrain de metre le royaume a feux et a sang, repousser les enemie,
- enssuite traquer les fuyard ils vous meneron directement a la cachete du seigneur ninja, puis donner lui une bonne corection pour ramener la paix!  
+
+text portal 1 - Baal a great ninja lord full of ambition is setting the land in fire and blood, It's time to intervene! -- push back the enemy -- and save the village
+text portal 2 - Now that the enemies are retreating --  chase them to discover their hiding place!
+text portal 3 - Your enemies have led you straight to Lord Baal's hideout. Go settle his account and bring peace! - the plan? - What plan? - no really just strength in the heap!

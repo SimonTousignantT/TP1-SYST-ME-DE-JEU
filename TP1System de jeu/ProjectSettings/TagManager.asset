@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ZoneLimite
+  - Enemie
+  - Reward
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -11,11 +15,11 @@ TagManager:
   - BackGround
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemie
+  - Player
+  - Death
+  - Trap
+  - ZoneLimite
   - 
   - 
   - 

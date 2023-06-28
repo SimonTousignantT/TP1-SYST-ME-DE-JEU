@@ -13,7 +13,5 @@ MonoBehaviour:
   m_Name: DataPlText2
   m_EditorClassIdentifier: 
   m_textLvl:
-  - Now that the enemies are retreating, chase them to discover their hiding place
-  - the plan?
-  - What plan?
-  - no really just strength in the heap!
+  - Now that the enemies are retreating
+  - ' chase them to discover their hiding place!'
